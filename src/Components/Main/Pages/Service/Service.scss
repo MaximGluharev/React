@@ -1,0 +1,229 @@
+.main__servise {
+    width: 80%;
+    margin: 0 auto;
+
+    .Service__Line {
+        width: 80%;
+        background-color: #4c8ef0;
+        height: 1px;
+        margin: 0 auto;
+        margin-bottom: 10%;
+
+    }
+
+    .Service__Block__title {
+        text-align: center;
+        h2 {
+            margin-top: 10%;
+            margin-bottom: 10%;
+        }
+
+
+    }
+
+    .Service__Block__Story{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10%;
+        .Service__Block__Story_img {
+            width: 50%;
+            img {
+                border-radius: 25px;
+                width: 100%;
+            }
+
+
+        }
+
+        .Service__Block__Story__wrapper {
+            width: 40%;
+            h3 {
+                font-size: 74px;
+                margin-bottom: 30px;
+                span {
+                    color: #99BAED;
+                }
+
+            }
+            
+            .Service__Block__Story__line {
+                width: 170px;
+                height: 3px;
+                background-color: black;
+                margin-bottom: 20px;
+            }
+
+
+        }
+
+
+    }
+
+    .Services__wrapper{
+        margin-bottom: 10%;
+        text-align: center;
+        h3 {
+            font-size: 56px;
+            margin-bottom: 5%;
+
+        }
+        &:last-child {
+            margin-bottom: 20%;
+        }
+
+        .Services__hair__items{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            text-align: center;
+            h4 {
+                font-size: 28px;
+            }
+
+            .Services__item{
+                background-color: #eceef7;
+                border-bottom-right-radius: 30px;
+                img {
+                    margin-bottom: 30px;
+                    border-top-left-radius: 30px;
+                    max-width: 100%;
+                }
+
+                h4 {
+                    margin-bottom: 50px;
+
+                }
+
+                button {
+                    margin-bottom: 40px;
+                }
+
+
+
+            }
+
+        }
+
+    }
+
+    @media (max-width: 1530px) {
+        .Services__wrapper {
+            .Services__hair__items {
+                justify-content: space-around;
+                .Services__item:last-child {
+                    margin-top: 10%;
+                    margin-bottom: 10%;
+                }
+            }
+
+        } 
+    }
+
+    @media (max-width: 1250px) {
+        .Service__Block__Story{
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 10%;
+            text-align: center;
+            .Service__Block__Story__wrapper {
+                width: 100%;
+                h3 {
+                    font-size: 74px;
+                    margin-bottom: 30px;
+                    span {
+                        color: #99BAED;
+                    }
+    
+                }
+                
+                .Service__Block__Story__line {
+                    display: none;
+                }
+    
+    
+            }
+
+            .Service__Block__Story_img {
+                width: 50%;
+                img {
+                    border-radius: 25px;
+                    width: 100%;
+                }
+    
+    
+            }
+        }
+    }
+
+
+
+    @media (max-width: 1025px) {
+       
+        .Service__Block__Story {
+            .Service__Block__Story_img {
+                width: 100%;
+                margin-bottom: 10%;
+                
+            }    
+        }   
+    
+        
+        
+        .Services__wrapper {
+            .Services__hair__items {
+                
+                .Services__item:first-child {
+                    margin-bottom: 10%;
+                }
+            }
+
+        } 
+    }
+
+    @media (max-width: 768px) {
+
+        .Service__Block__title {
+            margin-bottom: 20%;
+
+
+        }
+        h2 {
+            font-size: 56px;
+            line-height: normal;
+        }
+
+        .Service__Block__Story .Service__Block__Story__wrapper{
+            h3{
+                font-size: 46px;
+            }
+            p {
+                font-size: 22px;
+            }
+
+        } 
+
+        .Services__wrapper {
+            h3 {
+                font-size: 40px;
+            }
+
+            .Services__hair__items {
+                h4 {
+                    font-size: 24px;
+                }
+                .Services__item:last-child {
+                    margin-top: 10%;
+                    margin-bottom: 10%;
+                }
+            }
+
+        } 
+
+
+    }
+
+
+
+
+}

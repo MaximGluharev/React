@@ -1,0 +1,176 @@
+footer {
+    position: relative;
+    overflow: hidden;
+    .wrapper{
+        position: relative;
+        z-index: 1;
+        text-align: center;
+        width: 80%;
+        margin: 0 auto;
+        
+      
+    }
+    
+    .logo {
+       content: url("../../assets/img/logoFooter.svg");
+       max-width: 30%;
+       margin: 0 auto;
+       margin-bottom: 30px;
+     
+    }
+
+    p{
+        margin-bottom: 40px;
+
+    }
+
+    .social {
+        display: flex;
+        max-width: 25%;
+        justify-content: space-between;
+        margin: 0 auto;
+        margin-bottom: 50px;
+
+    }
+
+    a {
+        
+        padding: 14%;
+        background-color: #D3E5FF;
+        border-radius: 50%;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: block;
+        &:hover{
+            background-color: #99BAED;
+            transition: 0.6s;
+        }
+
+
+    }
+
+    .facebook{
+        background-image: url("../../assets/img/facebook.svg");
+
+    }
+
+    .twitter{
+        background-image: url("../../assets/img/twitter.svg"); 
+
+    }
+
+    .google{
+        background-image: url("../../assets/img/google.svg");
+
+    }
+
+    .line {
+        
+        border-top: 3px solid #99BAED;
+        margin: 0 auto;
+        padding-bottom: 100px;
+
+
+    }
+
+    .vector {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        top: 7.5em;
+        img {
+            max-width: 100%;
+        }
+
+
+
+    }
+
+    @media (max-width: 1310px) {
+
+        .logo {
+            max-width: 15%;
+        }
+
+        p{
+            font-size: 24px;
+        }
+
+        .social {
+           max-width: 30%;
+
+        }
+    }
+
+    @media (max-width: 1080px) {
+        .logo {
+            max-width: 20%;
+        }
+       
+        p{
+            font-size: 20px;
+        }
+
+        .social {
+            max-width: 40%;
+ 
+        }
+
+
+    }
+
+    @media (max-width: 750px) {
+        .social {
+            max-width: 45%;
+ 
+        }
+
+        .vector {
+            top: 7.5em;
+            img {
+                max-width: 100%;
+            }
+    
+    
+    
+        }
+
+    }
+
+    @media (max-width: 646px) {
+        .vector {
+            img {
+                max-width: 50%;
+            }
+        }
+
+        .social {
+            margin-bottom: 20px;
+        }
+
+    }
+
+
+    @media (max-width: 560px) {
+        p {
+            font-size: 16px;
+            line-height: normal;
+        }
+        .social {
+            max-width: 74%;
+ 
+        }
+
+        .line {
+            padding-bottom: 50px;
+    
+    
+        }
+
+    }
+
+
+
+}
+

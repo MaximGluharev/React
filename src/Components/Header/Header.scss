@@ -1,0 +1,233 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  max-width: 80%;
+  margin: 0 auto;
+    
+  .img {
+    padding-top: 10px;
+  }
+    
+  
+  .buttonBlock {
+    display: flex;
+    align-items: center;
+
+    padding-top: 40px;
+      
+    .Profile_Block {
+      position: relative;
+      margin-right: 72px;
+      cursor: pointer;
+      
+    }
+
+    @media (max-width: 1420px) {
+     display: none;
+      
+
+    }
+
+    
+
+  }
+
+  .dws {
+    display: none;
+   
+  }
+
+  .button_wrapper {
+    display: none;
+  }
+
+  
+
+  @media (max-width: 1420px) {
+    .button_wrapper {
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      bottom: 10%;
+      right: 5%;
+      z-index: 4;
+      align-items: center;
+      justify-content: space-between;
+
+      .Notification {
+        display: flex;
+        z-index: 3;
+        background: #e4edf0e5;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        margin-bottom: 20px;
+        
+        
+
+      }
+
+      .dws {
+        display: block;
+        
+       
+        z-index: 3;
+      }
+  
+      .pulse, .bloc, .phone {
+        position: absolute;
+        width: 90px;
+        height: 90px;
+        color: #fff;
+        text-align: center;
+        border-radius: 50%;
+      }
+      
+      .bloc {
+        cursor: pointer;
+        z-index: 1;
+        overflow: hidden;
+      }
+      
+      .pulse {
+        background: #5CC2E2;
+        position: relative;
+        transition: .5s;
+      }
+      
+      .phone {
+        font-size: 50px;
+        line-height: 94px;
+        top: 5px;
+        animation: phone .9s ease-in-out infinite;
+        
+      }
+      
+      .text {
+        position: absolute;
+        opacity: 0;
+        text-transform: uppercase;
+        font-weight: 700;
+        top: 32px;
+        left: 12px;
+        font-size: 15px;
+        transform: scaleX(-1);
+        transition: .5s ease-in-out;
+       
+      }
+      
+      .phone i {
+        transition: .5s ease-in-out;
+       
+      }
+      
+      .pulse:hover {
+        background: #29AEE3;
+       
+      }
+      
+      .pulse:hover i {
+        transition: .5s ease-in-out;
+        transform: scale(0);
+        opacity: 0;
+       
+      }
+       
+      .pulse:hover .text {
+        transform: scaleX(1);
+        transition: .5s ease-in-out;
+        opacity: 1;
+       
+      }
+       
+      .pulse:hover::before,
+      .pulse:hover::after {
+        content: '';
+        position: absolute;
+        border: 1px solid #29AEE3;
+        left: -20px;
+        right: -20px;
+        top: -20px;
+        bottom: -20px;
+        border-radius: 50%;
+        animation: pulse 1.8s linear infinite;
+        opacity: 0;
+       
+      }
+       
+      .pulse:hover::after {
+        animation-delay: .5s;
+       
+      }
+       
+      @keyframes phone {
+        0%, 100% {
+          transform: rotate(-20deg);
+        }
+        50% {
+          transform: rotate(21deg);
+        }
+       
+      }
+       
+      @keyframes pulse {
+        0% {
+          transform: scale(0.5);
+          opacity: 0;
+        }
+        50% {
+          opacity: 1;
+        }
+        100% {
+          transform: scale(1.2);
+          opacity: 0;
+        }
+       
+      }
+        
+    }
+
+
+  }
+
+  .Notification span, .Profile_Block span {
+    position: absolute;
+    display: inline-block;
+    color: #fff;
+    font-size: small;
+    width: 18%;
+    height: 10%;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #e00f0f;
+    border-radius: 50%;
+    top: 3%;
+    right: 35%;
+
+
+  }
+
+  .Profile_Block span {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    right: 5px;
+    top: -3px;
+ 
+  }
+   
+    
+    
+  
+
+
+
+}
+
+
+
+
+

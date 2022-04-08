@@ -1,0 +1,53 @@
+button {
+    width: 190px;
+    height: 76px;
+    background-color: #99BAED;
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #FFFFFF;
+    line-height: 30px;
+    letter-spacing: 1px;
+    box-shadow: 0px 15px 50px 5px  rgba(153, 186, 237, 0.5);
+    cursor: pointer;
+}
+
+.wrapper {
+    max-width: 1920px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+
+
+
+
+}
+
+h2 {
+    font-size: 75px;
+    line-height: 100px;
+    span {
+        color: #FBB400;
+    }
+    
+    
+}
+
+p {
+    font-size: 25px;
+    line-height: 38px;
+    color: #153461; 
+
+}
+
+@media (max-width: 417px) {
+    button {
+        width: 160px;
+        height: 62px;
+        font-size: medium;
+
+    }
+}
+
+
+
